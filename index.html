@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Main</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainershutterstock_24758047").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slideshutterstock_247580470": {
+    "bgimage" : "url('images/slideshutterstock_247580470.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slideshutterstock_247580471": {
+    "bgimage" : "url('images/slideshutterstock_247580471.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorshutterstock_24758047"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { margin-right: 0px;margin-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-2 { border-top-style:solid;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-color:#B9DBFE;border-right-color:#B9DBFE;border-bottom-color:#B9DBFE;border-left-color:#B9DBFE; color: #0A202E; background: #F0F9FF; padding: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainershutterstock_24758047 {
+    position: relative;
+        width: 340px;
+    height: 242px;
+        }
+
+.default-responsive .art-header .art-slidecontainershutterstock_24758047,
+.responsive .art-header .art-slidecontainershutterstock_24758047
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainershutterstock_24758047 {
+  position: absolute !important;
+}
+
+.art-slidecontainershutterstock_24758047 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainershutterstock_24758047 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainershutterstock_24758047 .active, .art-slidecontainershutterstock_24758047 .next, .art-slidecontainershutterstock_24758047 .prev {
+    display: block;
+}
+
+.art-slidecontainershutterstock_24758047 .active {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_24758047 .next, .art-slidecontainershutterstock_24758047 .prev {
+    width: 100%;
+}
+
+.art-slidecontainershutterstock_24758047 .next.forward, .art-slidecontainershutterstock_24758047 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainershutterstock_24758047 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainershutterstock_24758047 .active.back {
+    opacity: 0;
+}
+
+
+.art-slideshutterstock_247580470 {
+    background-image:  url('images/slideshutterstock_247580470.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_247580470 {
+    background-image:  url('images/slideshutterstock_247580470.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_247580470 {
+    background-image:  url('images/slideshutterstock_247580470.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_247580470 {
+    background-image: url('images/slideshutterstock_247580470.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_247580470 {
+    background-image: url('images/slideshutterstock_247580470.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slideshutterstock_247580471 {
+    background-image:  url('images/slideshutterstock_247580471.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slideshutterstock_247580471 {
+    background-image:  url('images/slideshutterstock_247580471.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slideshutterstock_247580471 {
+    background-image:  url('images/slideshutterstock_247580471.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slideshutterstock_247580471 {
+    background-image: url('images/slideshutterstock_247580471.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slideshutterstock_247580471 {
+    background-image: url('images/slideshutterstock_247580471.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigatorshutterstock_24758047 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 218px;
+  left: 87.06%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorshutterstock_24758047
+{
+background: #7CCDF8;background: -webkit-linear-gradient(top, rgba(202, 235, 252, 0.6) 0, rgba(47, 175, 244, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(202, 235, 252, 0.6) 0, rgba(47, 175, 244, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(202, 235, 252, 0.6) 0, rgba(47, 175, 244, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(202, 235, 252, 0.6) 0, rgba(47, 175, 244, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(202, 235, 252, 0.6) 0, rgba(47, 175, 244, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(202, 235, 252, 0.6) 0, rgba(47, 175, 244, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigatorshutterstock_24758047 > a
+{
+background: #0C95DF;background: #0C95DF;background: #0C95DF;background: #0C95DF;background: #0C95DF;-svg-background: #0C95DF;background: #0C95DF;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_24758047 > a.active
+{
+background: #77BAFE;background: #77BAFE;background: #77BAFE;background: #77BAFE;background: #77BAFE;-svg-background: #77BAFE;background: #77BAFE;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigatorshutterstock_24758047 > a:hover
+{
+background: #0275E8;background: #0275E8;background: #0275E8;background: #0275E8;background: #0275E8;-svg-background: #0275E8;background: #0275E8;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<nav class="art-nav">
+    <ul class="art-hmenu"><li><a href="home.html" class="active">Home</a></li><li><a href="services.html">Services</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="about-us.html">About Us</a></li><li><a href="contact-us.html">Contact Us</a></li></ul> 
+    </nav>
+<header class="art-header">
+
+    <div class="art-shapes">
+        
+            </div>
+
+<h2 class="art-slogan">For more information, please call at 0963 081 729</h2>
+
+
+
+
+
+                
+                    
+</header>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 58%" >
+        <p><img width="320" height="213" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(184, 219, 254); border-right-color: rgb(184, 219, 254); border-bottom-color: rgb(184, 219, 254); border-left-color: rgb(184, 219, 254); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; " alt="" class="art-lightbox" src="images/a19bd7fe-5f5c-45c2-ae85-77bdd27f9584.png">
+        </p><p>
+        </p>
+    </div><div class="art-layout-cell layout-item-0" style="width: 42%" >
+        <h1 class="gmql0nx0 l94mrbxd p1ri9a11 lzcic4wl" dir="auto" style="color: rgb(5, 5, 5); font-size: inherit; font-weight: inherit; font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; text-align: center; background-color: rgb(255, 255, 255);"><br></h1><h1 class="gmql0nx0 l94mrbxd p1ri9a11 lzcic4wl" dir="auto" style="color: rgb(5, 5, 5); font-size: inherit; font-weight: inherit; font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; text-align: center; background-color: rgb(255, 255, 255);">唯淨。冷氣機/洗衣機專業清洗</h1><p><span style="font-weight: bold;"></span></p>
+         
+        <p><span style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);">唯淨沒有最便宜</span><br style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);">但有業界最高品質</span><br style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);">值得您的信賴</span><br style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgb(101, 103, 107); font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 400; text-align: center; background-color: rgb(255, 255, 255);">洗後完成粉絲團指定步驟?</span></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout-wrapper layout-item-1">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 100%" >
+        <blockquote style="margin: 0px">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien.
+        </blockquote>
+    </div>
+    </div>
+</div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 39%" >
+        <h4>Patient Awareness</h4><img width="206" height="241" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(184, 219, 254); border-right-color: rgb(184, 219, 254); border-bottom-color: rgb(184, 219, 254); border-left-color: rgb(184, 219, 254); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; " alt="" class="art-lightbox" src="images/c956bdc4-4d40-4bd8-9000-56b251c96269.png">
+        <br>
+        <br>
+         Pellentesque ac felis tellus. Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id. Duis placerat justo eu nunc.<br>
+        <br>
+    </div><div class="art-layout-cell layout-item-0" style="width: 61%" >
+        <h4>Training Programs</h4><div id="shutterstock_24758047" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-style: solid; border-color: #B8DBFE; border-width: 3px;  " class="art-collage">
+<div class="art-slider art-slidecontainershutterstock_24758047" data-width="340" data-height="242">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideshutterstock_247580470" >
+
+
+</div>
+<div class="art-slide-item art-slideshutterstock_247580471" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorshutterstock_24758047" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        <br>
+        <br>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies.
+    </div>
+    </div>
+</div>
+</div>
+                                
+                
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar1"><div class="art-vmenublock clearfix">
+        <div class="art-vmenublockheader">
+            <h3 class="t">Navigation</h3>
+        </div>
+        <div class="art-vmenublockcontent">
+<ul class="art-vmenu"><li><a href="services.html">Services</a></li><li><a href="training.html">Training</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="resources.html">Resources</a></li><li><a href="about-us.html">About Us</a></li><li><a href="contact-us.html">Contact Us</a></li></ul>
+                
+        </div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Find a Prof</h3>
+        </div>
+        <div class="art-blockcontent"><p style="text-align:center;"><img alt="" height="160" src="images/shutterstock_15714391.jpg" width="120" class=""></p>
+<p style="text-align:center;"><br>
+Phasellus elit dolor, porttitor id consec tetur sit ame.<br>
+<br>
+<a href="/departments" class="art-button">Search Staff</a></p></div>
+</div></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%">
+        <p>Copyright © 2021 Leimi MikeRyzhov</p>
+    </div>
+    </div>
+</div>
+
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>
